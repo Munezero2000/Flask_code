@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Munezero</title>
+    <script>
+      function exercisor() {
+        alert("Hey Mag you made it man");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Hello Mag</h1>
+    <p>{{stuff| title |safe}}</p>
+    <button onclick="exercisor()">Click me sir.</button>
+    <h2>Favorite Pizza</h2>
+    {% for Pizza in favorite_pizza%} {% if Pizza is integer %} {{Pizza + 100}}
+    {% else%} {{Pizza}} {%endif%} {% endfor%} {{favorite_pizza.0 | reverse}}
+    <br />
+  </body>
+</html>
